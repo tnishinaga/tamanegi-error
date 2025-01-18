@@ -1,0 +1,21 @@
+[package]
+name = "tamanegi-error"
+version = "0.1.0"
+edition = "2021"
+authors = ["Toshifumi Nishinaga <tnishinaga.dev@gmail.com>"]
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+description = "implementation detail of `tamanegi-error` crate"
+repository = "https://github.com/tnishinaga/tamanegi-error"
+
+[dependencies]
+snafu = { version = "0.8.5", default-features = false, features = [
+    "rust_1_81",
+] }
+tamanegi-error-impl = { path = "impl", version = "0.1.0" }
+
+[dev-dependencies]
+tamanegi-error = { path = "" }
+
+[[example]]
+name = "basic_struct"

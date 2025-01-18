@@ -1,0 +1,18 @@
+[package]
+name = "tamanegi-error-impl"
+version = "0.1.0"
+edition = "2021"
+authors = ["Toshifumi Nishinaga <tnishinaga.dev@gmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "Tamanegi-Error is a library that helps you create error types that can track the propagation history"
+repository = "https://github.com/tnishinaga/tamanegi-error"
+
+
+[dependencies]
+proc-macro2 = "1.0.92"
+quote = "1.0.38"
+syn = { version = "2.0.95", features = ["full", "extra-traits"] }
+proc-macro-crate = "3.2.0"
+
+[lib]
+proc-macro = true
