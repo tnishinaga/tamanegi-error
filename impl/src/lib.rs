@@ -3,8 +3,8 @@ use proc_macro2::TokenStream as TokenStream2;
 use quote::quote;
 use std::ops::{Deref, DerefMut};
 use syn::{
-    Data, DataEnum, DataStruct, DeriveInput, Error, Fields, FieldsNamed, Result, parse_macro_input,
-    punctuated::Punctuated, spanned::Spanned,
+    parse_macro_input, punctuated::Punctuated, spanned::Spanned, Data, DataEnum, DataStruct,
+    DeriveInput, Error, Fields, FieldsNamed, Result,
 };
 
 const CRATE_NAME: &'static str = "tamanegi-error";
